@@ -1,0 +1,72 @@
+{
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "ruby": "html"
+  },
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+
+  // Code Runner
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++17 -O2 -Wall -Wshadow $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "python": "python3 -u $fullFileName"
+  },
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.preserveFocus": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 1,
+
+  // Global Tab Size
+  "editor.tabSize": 2,
+
+  // C++
+  "[cpp]": {
+    "editor.tabSize": 2
+  },
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 0}",
+  "C_Cpp.updateChannel": "Insiders",
+
+  // Python
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Path": "/home/axiom/.local/bin/autopep8",
+
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/home/axiom/.local/bin/flake8",
+  "python.linting.flake8Args": ["--max-line-length=120"],
+
+  // Golang
+  "[go]": {
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "go.docsTool": "godoc",
+  "go.buildOnSave": "workspace",
+  "go.vetOnSave": "off",
+  "go.formatTool": "goimports",
+  "go.lintOnSave": "package",
+  "go.lintTool": "golangci-lint",
+  "go.testOnSave": true,
+  "go.coverOnSave": false,
+  "go.coverageDecorator": {
+    "type": "highlight",
+    "coveredHighlightColor": "rgba(64,255,64,0.3)",
+    "uncoveredHighlightColor": "rgba(255,64,64,0.3)",
+    "coveredGutterStyle": "blockblue",
+    "uncoveredGutterStyle": "slashyellow"
+  }
+}
